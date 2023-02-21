@@ -1,0 +1,69 @@
+.windowBg{
+    display: flex;
+    width: 80%;
+    height: 550px;
+    background: url("../img/Rectangle 1.png");
+}
+
+.windowBg:hover{
+    width: 80%;
+    height: 550px;
+    background: url("../img/Rectangele 2.png");
+}
+
+.windowBg:after{
+    width: 80%;
+    height: 550px;
+    background: url("../img/Rectangle 3.png");
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 200px;
+    width: 100%;
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+}
+
+.link-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%);
+    z-index: 9;
+    display: none;
+}
+
+.card-1 {
+    background-color: #00ff00;
+}
+
+.card-2 {
+    background-color: #0000ff;
+}
+
+.card-3 {
+    background-color: #f00f0f;
+}
+
+.card:hover .link-text {
+    display: block;
+}
+
+.card:hover {
+    background-image: linear-gradient(to left, #11de93, #0e7ad6);
+    opacity: 0.8;
+}
